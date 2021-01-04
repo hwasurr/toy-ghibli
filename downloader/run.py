@@ -15,9 +15,6 @@ class Downloader:
         self.__downloadPicture()
 
     def parseSoup(self, html, selector):
-        """
-        docstring
-        """
         bs = BeautifulSoup(html, 'html.parser')
         return bs.select(selector)
 
