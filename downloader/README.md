@@ -1,13 +1,20 @@
 # Ghibli Wallpaper Downloader
 
-스튜디오 지브리에서 무료로 자사의 작품속 장면이 담긴 wallpaper를 무료로 배포하였습니다. 상업적인 용도를 제외하고는 자유롭게 사용할 수 있습니다.
-
-https://www.ghibli.jp/info/013409/
-
-## Install
+Studio Ghibli has released free-to-use images of its classic movies. The images are available on the [studio's offitial website](https://www.ghibli.jp/info/013409/).
+This repo helps you to download wallpapers with one command.
 
 ```sh
-cd downloader
+python run.py
+```
+
+## Prerequisites
+
+- Python3.6 ~
+
+## Installation
+
+```sh
+# ./downloader
 
 # windows
 pip install -r requirements.txt
@@ -19,7 +26,7 @@ pip3 install -r requirements.txt
 ## Usage
 
 ```sh
-cd downloader
+# ./downloader
 
 # Windows
 python run.py
