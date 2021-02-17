@@ -5,7 +5,7 @@ export class Ripple {
     this.y = 0;
     this.radius = 0;
     this.maxRadius = 0;
-    this.speed = 10;
+    this.speed = 20;
   }
 
   resize(stageWidth, stageHeight)  {
@@ -17,7 +17,7 @@ export class Ripple {
     this.x = x;
     this.y = y;
     this.radius = 0;
-    this.maxRadius = this.getMax(x,y);
+    this.maxRadius = 1; // this.getMax(x,y);
   }
 
   animate(

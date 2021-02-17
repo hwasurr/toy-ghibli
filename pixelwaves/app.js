@@ -76,7 +76,7 @@ class App {
         this.image.height * (this.stageWidth / this.image.width)
       );
       this.imgPos.y = Math.round(
-        (this.stageHeight - this.imgPos.heigt) / 2
+        (this.stageHeight - this.imgPos.height) / 2
       );
     }
 
@@ -97,7 +97,6 @@ class App {
     );
 
     this.imgData = this.tmpCtx.getImageData(0, 0, this.stageWidth, this.stageHeight);
-    console.log(this.imgData)
 
     this.drawDots();
   }
@@ -144,7 +143,8 @@ class App {
       const dot = this.dots[i];
 
       if (collide(
-        dot.x, dot.y, this.ripple.x, this.ripple.y, this.ripple.radius
+        dot.x, dot.y,
+        this.ripple.x, this.ripple.y, this.ripple.radius
       )) {
         dot.animate(this.ctx);
       }
